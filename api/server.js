@@ -2,7 +2,7 @@ const express = require("express");
 
 const Players = require("../players/playersModel.js");
 
-const server = expres();
+const server = express();
 
 server.use(express.json());
 
