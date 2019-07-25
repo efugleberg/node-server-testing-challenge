@@ -17,7 +17,9 @@ async function update(id, changes) {
 }
 
 function remove(id) {
-  return null;
+  return db("players")
+    .where("id", id)
+    .del();
 }
 
 function getAll() {
